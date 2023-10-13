@@ -23,6 +23,41 @@ export const navLinks = [
   },
 ];
 
+export const images = [
+  {
+    title: "first",
+    Url: "https://images.theconversation.com/files/296052/original/file-20191008-128681-ngzwqb.jpg?ixlib=rb-1.1.0&rect=15%2C20%2C929%2C926&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip",
+  },
+  {
+    title: "two",
+    Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkiYa47IxTWhFEc0ElZLH6_6sxBU8SWmLBfw&usqp=CAU",
+  },
+  {
+    title: "three",
+    Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSliEf8PQhjDuj83hoo3lrQZ6CiMXHPrrwQMw&usqp=CAU",
+  },
+  {
+    title: "four",
+    Url: "https://i.pinimg.com/originals/0a/76/e2/0a76e2275e3f4872ea38dada19f48768.jpg",
+  },
+  {
+    title: "five",
+    Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVu-EXGS7m65ETomCY1U4jah9uHRnA-M7T0g&usqp=CAU",
+  },
+  {
+    title: "six",
+    Url: "https://cdn.britannica.com/87/2087-004-264616BB/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg",
+  },
+  {
+    title: "seventh",
+    Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp6_3m-wzT7k25xIk9Ssf0I_QZ9Vy-b1rFbQ&usqp=CAU",
+  },
+  {
+    title: "eight",
+    Url: "https://nftevening.com/wp-content/uploads/2021/10/unnamed-3.png",
+  },
+];
+
 export const stats = [
   {
     id: "stats-1",
