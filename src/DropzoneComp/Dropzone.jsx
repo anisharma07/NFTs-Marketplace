@@ -40,6 +40,46 @@ const Dropzone = ({ className }) => {
 
   return (
     <form className="w-full">
+      <div className="flex flex-col ss:flex-row justify-between gap-4 text-purple-500 mb-10">
+        <div className="flex flex-col ss:w-[40%] w-[100%] justify-between gap-4">
+          <div className="flex flex-row justify-start gap-4">
+            <label for="name" className=" text-[18px] font-[800] uppercase">
+              Name:{" "}
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="bg-gray-700 border-[1px] border-gray-500 rounded-md text-white w-[100%] px-1"
+            />
+          </div>
+
+          <div className="flex flex-row justify-start gap-5">
+            <label for="type" className=" text-[18px] font-[800] uppercase">
+              Type:{" "}
+            </label>
+            <input
+              type="text"
+              id="type"
+              name="type"
+              className="bg-gray-700 border-[1px] border-gray-500 rounded-md text-white w-[100%] px-1"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row ss:w-[60%] w-[100%] gap-4">
+          <label
+            for="description"
+            className=" text-[18px] font-[800] uppercase"
+          >
+            description:{" "}
+          </label>
+          <textarea
+            id="description"
+            name="description"
+            className="bg-gray-700 border-[1px] border-gray-500 rounded-md text-white   w-[100%] h-[100px] px-1"
+          />
+        </div>
+      </div>
       <div
         {...getRootProps({
           className: className,
@@ -102,10 +142,8 @@ const Dropzone = ({ className }) => {
               ))}
             </ul>
           </div>
+
           <div className="flex flex-row justify-end items-start flex-wrap gap-4 w-full">
-            {/* <h2 className="title text-3xl font-semibold text-gray-400">
-            Preview
-          </h2> */}
             <button
               onClick={() => removeAll()}
               className="py-2 text-[12px] uppercase tracking-wider font-bold text-neutral-500 border border-secondary-400 rounded-md px-3 hover:bg-secondary-400 hover:text-white transition-colors"
