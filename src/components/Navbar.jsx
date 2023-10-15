@@ -6,7 +6,6 @@ import { navLinks } from "../constants";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
@@ -15,14 +14,14 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            className={`font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-dimWhite mr-10`}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <li className="text-white bg-purple-700 hover:bg-purple-900 py-1 px-2 rounded-[20px] font-poppins font-medium cursor-pointer text-[16px]">
+          <a href="#">Connect Wallet</a>
+        </li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -42,14 +41,14 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                className={`font-poppins font-medium cursor-pointer text-[16px] mb-4 text-white text-dimWhite`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <li className="text-white bg-purple-700 hover:bg-purple-900 py-1 px-2 rounded-[25px] font-poppins font-medium cursor-pointer text-[16px]">
+              <a href="#">Connect Wallet</a>
+            </li>
           </ul>
         </div>
       </div>

@@ -12,7 +12,7 @@ const Page = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-Rose font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[75px] leading-[55px]">
+          <h1 className="flex-1 font-Rose font-semibold ss:text-[72px] text-[44px] text-white ss:leading-[75px] leading-[55px]">
             <h1 className="w-full">Discover</h1>
             Collect, & Sell <br className="sm:block hidden" />
             <h1 className="text-gradient">Extraordinary</h1>
@@ -20,7 +20,9 @@ const Page = () => {
           </h1>
         </div>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5 leading-[27px]`}>
+        <p
+          className={`${styles.paragraph} max-w-[470px] mt-5 leading-[20px] xs:leading-[27px] text-[13px] xs:text-[18px]`}
+        >
           The Leading NFT Marketplace On Ethereum
           <br />
           Home To The Next Generation Of Digital Creators.
@@ -47,19 +49,20 @@ const Page = () => {
       <div
         className={`flex-1 flex flex-col ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <img src={nft} alt="NFT" className="w-[65%] h-[100%] relative z-[5]" />
+        <img
+          src="https://play-lh.googleusercontent.com/wmZpdP5WobvL9zP-S-JBN6EuZIqVfyL3ifj2tRTpLQwA0lnNMyKVxNcXhwUV6_FTX0Q"
+          alt="NFT"
+          className="w-[65%] h-[100%] relative z-[5] border-[7px] border-purple-300 rounded-[5px]"
+        />
         <Stats />
-
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
       </div>
-
       <div className={`ss:hidden ${styles.flexCenter}`}></div>
     </section>
   );
 };
-
 export default Page;

@@ -25,7 +25,7 @@
     {
       "id": 3,
       "car_name": "Ford Explorer",
-      "make_year": 2022,
+      "make_year": 2023,
       "capacity": "7 passengers",
       "fuel_type": "Gasoline",
       "speed": "155 mph",
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "car_name": "Chevrolet Malibu",
-      "make_year": 2020,
+      "make_year": 2023,
       "capacity": "5 passengers",
       "fuel_type": "Gasoline",
       "speed": "140 mph",
@@ -58,7 +58,7 @@
     {
       "id": 6,
       "car_name": "Tesla Model 3",
-      "make_year": 2022,
+      "make_year": 2023,
       "capacity": "5 passengers",
       "fuel_type": "Electric",
       "speed": "160 mph",
@@ -69,7 +69,7 @@
     {
       "id": 7,
       "car_name": "BMW 3 Series",
-      "make_year": 2021,
+      "make_year": 2023,
       "capacity": "5 passengers",
       "fuel_type": "Gasoline",
       "speed": "155 mph",
