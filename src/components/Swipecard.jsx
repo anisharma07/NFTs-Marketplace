@@ -6,13 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 // import required modules
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Autoplay } from "swiper/modules";
 import { images } from "../constants";
 
 const Swipecard = () => {
   return (
     <section className="w-full min-h-[500px] flex flex-col justify-center items-center">
-      <div className="w-[80%] mt-10 mb-6 shadowBox border-[1px] flex flex-col md:flex-row justify-evenly items-center py-6 px-16 rounded-[20px]">
+      <div className="w-[80%] mt-10 mb-6 shadowBox border-[1px] flex flex-col md:flex-row justify-evenly items-center py-6 px-6 rounded-[20px]">
         <div className="flex flex-col justify-between min-h-[250px] items-start w-[100%] md:w-[55%] h-full mb-[40px] md:mb-[0px]">
           <h1 className="text-gradient text-[51px] font-Rose leading-[60px]">
             Start Selling now!
@@ -22,7 +22,7 @@ const Swipecard = () => {
             clicking the wallet icon in the top right corner. Learn about
             wallets we support.
           </p>
-          <button className="rounded-[27px] hover:bg-black border-white border-[1px] mt-4 text-white text-[25px] font-[900] bg-purple-700 py-2 px-6">
+          <button className="rounded-[27px] hover:bg-black border-white border-[1px] mt-4 text-white text-[23px] xs:text-[25px] font-[900] bg-purple-700 py-2 px-6">
             Enter Marketplace
           </button>
         </div>
@@ -30,8 +30,9 @@ const Swipecard = () => {
           {" "}
           <Swiper
             effect={"cards"}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             grabCursor={true}
-            modules={[EffectCards]}
+            modules={[EffectCards, Autoplay]}
             className="mySwiper"
           >
             {images.map((items) => (

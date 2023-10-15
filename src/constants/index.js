@@ -2,24 +2,43 @@ import { facebook, instagram, linkedin, twitter } from "../assets";
 
 export const navLinks = [
   {
-    id: "Marketplace",
+    id: 1,
     title: "Marketplace",
   },
   {
-    id: "Collection",
+    id: 2,
     title: "Collection",
   },
   {
-    id: "Community",
+    id: 3,
     title: "Community",
   },
   {
-    id: "Create",
+    id: 4,
     title: "Create",
   },
+];
+
+export const collectionNames = [
   {
-    id: "Connect Wallet",
-    title: "Connect Wallet",
+    id: 1,
+    title: "All",
+  },
+  {
+    id: 2,
+    title: "2023",
+  },
+  {
+    id: 3,
+    title: "2022",
+  },
+  {
+    id: 4,
+    title: "2021",
+  },
+  {
+    id: 5,
+    title: "2020",
   },
 ];
 

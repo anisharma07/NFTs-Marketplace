@@ -29,6 +29,7 @@ const PriceAndReadMore = () => {
     </div>
   );
 };
+
 function Cardesign({ cardsToShow }) {
   return (
     <>
