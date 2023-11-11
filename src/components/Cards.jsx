@@ -4,8 +4,8 @@ import Cardesign from "./CardComps/Cardesign";
 import Navigator from "./CardComps/Navigator";
 import data from "../assets/car.json";
 import { collectionNames } from "../constants";
-
 const CardsPerPage = 8;
+
 function Cards() {
   //cut cards
   const [cards, setCards] = useState(data.cars);
@@ -16,15 +16,22 @@ function Cards() {
   const [cardsToShow, setCardsToShow] = useState(
     filteredCards.slice(0, CardsPerPage)
   );
+
+  // change to happen when page change occur..like filter cards or navigate by page.
   const handlePageChange = (page) => {
     const startIndex = (page - 1) * CardsPerPage;
     const endIndex = startIndex + CardsPerPage;
     setCardsToShow(filteredCards.slice(startIndex, endIndex));
     setCurrentPage(page);
+    document
+      .getElementById("Collection")
+      .scrollIntoView({ behavior: "smooth" });
   };
 
+  // calc. total number of pages
   let totalPages = Math.ceil(filteredCards.length / CardsPerPage);
 
+  // filter card by year
   const filterCards = (year) => {
     if (year === "All") {
       setFilteredCards(cards);
@@ -39,20 +46,19 @@ function Cards() {
       totalPages = Math.ceil(filtered.length / CardsPerPage);
     }
   };
-  // const getAll = () => {
-  //   setFilteredCards(cards);
-  //   handlePageChange(1);
-  //   setCardsToShow(cards.slice(0, CardsPerPage));
-  //   totalPages = Math.ceil(cards.length / CardsPerPage);
-  // };
+
+  // return Top Collections section data
   return (
-    <section className="flex flex-col gap-5 justify-center items-center">
+    <section
+      id="Collection"
+      className="flex flex-col gap-5 justify-center items-center"
+    >
       <div className="">
         <h1 className="text-gradient font-Rose font-semibold ss:text-[52px] text-[35px] ss:leading-[55px] leading-[35px] mb-4">
           Top Collections
         </h1>
       </div>
-      <div className="flex flex-row flex-wrap justify-center max-w-[80%]">
+      <div className="container-div flex flex-row flex-wrap justify-center max-w-[80%]">
         {collectionNames.map((name, index) => (
           <button
             key={name.id}

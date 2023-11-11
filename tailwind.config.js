@@ -12,7 +12,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        Rose: ["Red Rose", "serif"],
+        Rose: ["Days One", "sans-serif"],
       },
       minHeight: {
         custom: "500px",

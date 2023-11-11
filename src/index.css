@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -172,4 +173,18 @@
 .shadowBox {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+.image-container:hover {
+  animation: spin 0.3s linear 1;
+  transform: scale(1.2); /* Rotate the image by 20 degrees on hover */
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// import Parts from "./Parts";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -9,17 +9,17 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
+      {/* <Parts /> */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-dimWhite mr-10`}
+            className={`font-poppins font-[500] cursor-pointer text-[16px] text-white hover:text-dimWhite mr-10`}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <li className="text-white bg-purple-700 hover:bg-purple-900 py-1 px-2 rounded-[20px] font-poppins font-medium cursor-pointer text-[16px]">
+        <li className="text-white bg-purple-700 hover:bg-purple-900 py-2 px-3 rounded-[20px] font-poppins font-medium cursor-pointer text-[16px]">
           <a href="#">Connect Wallet</a>
         </li>
       </ul>

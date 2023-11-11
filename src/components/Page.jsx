@@ -1,5 +1,4 @@
 import styles from "../style";
-import { nft } from "../assets";
 import Stats from "./Stats";
 
 const Page = () => {
@@ -12,22 +11,19 @@ const Page = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-Rose font-semibold ss:text-[72px] text-[44px] text-white ss:leading-[75px] leading-[55px]">
-            <h1 className="w-full">Discover</h1>
+          <h1 className=" flex-1 font-Rose font-[100] ss:text-[80px] text-[43px] text-white ss:leading-[75px] leading-[45px]">
+            <h1 className="w-full headline">Discover</h1>
             Collect, & Sell <br className="sm:block hidden" />
-            <h1 className="text-gradient">Extraordinary</h1>
-            <h1 className="">NFTs</h1>
+            <h1 className="text-gradient headline1">Extraordinary</h1>
+            <h1 className="headline2">NFTs</h1>
           </h1>
         </div>
 
-        <p
-          className={`${styles.paragraph} max-w-[470px] mt-5 leading-[20px] xs:leading-[27px] text-[13px] xs:text-[18px]`}
-        >
-          The Leading NFT Marketplace On Ethereum
+        <p className="font-poppins font-normal text-dimWhite max-w-[470px] mt-5 leading-[27px] xs:leading-[30px] text-[14px] xs:text-[18px]">
+          ▶ The Leading NFT Marketplace On Ethereum
           <br />
-          Home To The Next Generation Of Digital Creators.
-          <br />
-          Discover The Best NFT Collections.
+          ▶ Home To The Next Generation Of Digital Creators.
+          <br />▶ Discover The Best NFT Collections.
         </p>
         <div className="flex flex-row w-[270px] mt-5 justify-between">
           <button
@@ -50,7 +46,7 @@ const Page = () => {
         className={`flex-1 flex flex-col ${styles.flexCenter} md:my-0 my-10 relative`}
       >
         <img
-          src="https://play-lh.googleusercontent.com/wmZpdP5WobvL9zP-S-JBN6EuZIqVfyL3ifj2tRTpLQwA0lnNMyKVxNcXhwUV6_FTX0Q"
+          src="https://i.ytimg.com/vi/YDj3JHtIviQ/maxresdefault.jpg"
           alt="NFT"
           className="w-[65%] h-[100%] relative z-[5] border-[7px] border-purple-300 rounded-[5px]"
         />
