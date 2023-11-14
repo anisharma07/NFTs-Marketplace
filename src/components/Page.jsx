@@ -20,7 +20,7 @@ const Page = () => {
         </div>
 
         <p className="font-poppins font-normal text-dimWhite max-w-[470px] mt-5 leading-[27px] xs:leading-[30px] text-[14px] xs:text-[18px]">
-          ▶ The Leading NFT Marketplace On Ethereum
+          ▶ The Leading NFT Marketplace On ICP Blockchain 
           <br />
           ▶ Home To The Next Generation Of Digital Creators.
           <br />▶ Discover The Best NFT Collections.

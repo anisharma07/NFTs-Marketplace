@@ -12,7 +12,7 @@ ScrollReveal().reveal(".company", {
 
 const Logos = () => (
   <section id="features" className="min-h-custom py-6 flex justify-center">
-    <div className="flex flex-row flex-wrap justify-center items-center w-[80%] mb-[150px]">
+    <div className="flex flex-row flex-wrap justify-center items-center w-[80%] mb-[150px] gap-4">
       {Lagos.map((logo) => (
         <img
           src={logo.src}
@@ -20,6 +20,7 @@ const Logos = () => (
           className="company w-[200px] md:w-[250px] ss:w-[150px] mx-10"
         />
       ))}
+      <p className="text-white font-[700] text-4xl ">Powered By ICP Blockchain</p>
     </div>
   </section>
 );
