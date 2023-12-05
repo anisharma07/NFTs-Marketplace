@@ -10,7 +10,7 @@ const Footer = () => (
       >
         <div className="flex-[1] min-h-[230px] flex flex-col justify-between items-center md:items-start">
           <img
-            src={logo}
+            src="https://res.cloudinary.com/dvvgz11nl/image/upload/v1701807340/memeplace_logo_jicz6x.png"
             alt="Logo"
             className="w-[266px] h-[72.14px] object-contain"
           />
