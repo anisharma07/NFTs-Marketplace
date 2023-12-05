@@ -10,9 +10,9 @@ const Footer = () => (
       >
         <div className="flex-[1] min-h-[230px] flex flex-col justify-between items-center md:items-start">
           <img
-            src="https://res.cloudinary.com/dvvgz11nl/image/upload/v1701807340/memeplace_logo_jicz6x.png"
+            src="https://res.cloudinary.com/dvvgz11nl/image/upload/v1701807848/memeplace_logo_vfcss5.png"
             alt="Logo"
-            className="w-[266px] h-[72.14px] object-contain"
+            className="w-[266px] object-contain"
           />
           <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
             The Leading NFT Marketplace On Ethereum Home To The Next Generation
@@ -60,7 +60,7 @@ const Footer = () => (
       </div>
       <div className="w-full flex justify-start items-center md:flex-row flex-col pt-6 ">
         <p className="font-poppins font-normal text-center text-[17px] text-white">
-          Ⓒ 2023 Solana. All Rights Reserved.
+          Ⓒ 2023 Memeplace. All Rights Reserved.
         </p>
       </div>
     </div>
