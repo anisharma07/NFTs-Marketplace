@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={imgLogo} alt="hoobank" className="w-[90px] h-[90px]" />
+      <img src="https://res.cloudinary.com/dvvgz11nl/image/upload/v1701807340/memeplace_logo_jicz6x.png" alt="hoobank" className="w-[90px] h-[90px]" />
       {/* <Parts /> */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
